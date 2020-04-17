@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="fr-fr">
+    <head>
+        <title>Cartelis Julien</title>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <!-- Bootstrap CSS -->
+        <link href="css/bootstrap.min.css" rel="stylesheet">
+        <!-- jQuery-->
+        <script src="js/jquery.min.js"></script>
+                <!-- JS -->
+        <script src="js/code.js"></script>
+        <!-- Optional JavaScript -->
+        <script src="https://apis.google.com/js/api.js"></script>
+        <script async defer src="https://apis.google.com/js/api.js"
+        onload="this.onload=function(){};handleClientLoad()"
+        onreadystatechange="if (this.readyState === 'complete') this.onload()">
+        </script>
+        
+
+        <!-- Mon CSS Perso -->
+        <link href="css/perso.css" rel="stylesheet" />
+    </head>
+    <body id="corps">
+      <h1> Duplicate your Spreadsheet </h1>
+
+<button id="sign-in-or-out-button"
+        style="margin-left: 25px">Connect API</button>
+
+
+<div id="auth-status" style="display: inline; padding-left: 25px">You have not authorized this app or you are signed out.</div><hr>
+
+<div id="load" style=" padding-left: 25px"></div><hr>
+
+
+<div id="selection">
+  <span id="text"> Choose the file you would like to deduplicate : </span>
+  <br>
+<select id="doc" style="margin-top: 10px" name="carlist" form="fo">
+</select>
+<br>
+
+  <button id="for" style="margin-top: 15px" onclick="deduplicate()">Deduplicate</button>
+
+</div>
+
+</body>
+</html>
+
